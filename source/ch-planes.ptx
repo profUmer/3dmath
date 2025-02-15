@@ -4,10 +4,12 @@
   <title>Planes</title>
 
   <introduction>
-    <p> Planes are infinitely thin and flat sheets that stretch out forever.  </p>
+    <p> When I say "Planes", I mean an infinitely thin and flat sheet that stretches on and on forever. I know what you are thinking - 
+    how can they possibly be useful for 3D graphics which is definitely not rendered on an infinitely large screen? Well, it turns
+    out that planes can be combined together to make lines and points and also reflect, rotate, and move objects too. Now that's useful! </p>
   </introduction>
 
   <!-- include sections -->
-  <xi:include href="sec-section-name.ptx" />
+  <!-- <xi:include href="sec-section-name.ptx" /> -->
 
 </chapter>

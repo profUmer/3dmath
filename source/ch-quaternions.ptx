@@ -4,8 +4,9 @@
   <title>Quaternions</title>
 
   <introduction>
-    <p> Don't be afraid! Quaternions are just helpful little creatures that love to rotate things. 
-    They are made by the intersection of two planes passing through the origin. That gives you the axis of rotation.
+    <p> Quaternions get a bad rap. It takes just one person to yell "four dimensional imaginary numbers!", and 
+    students run for their lives. Don't fall for the scare tactics - quaternions are just helpful creatures that love to rotate things. 
+    They are made by the intersection of two planes passing through the origin, giving the axis of rotation. You already know my favourite quaternion, the number 1.
       </p>
   </introduction>
 
