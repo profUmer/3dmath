@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-vectors" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Vectors</title>
+
+  <introduction>
+    <p> Vectors are the bedrock of 3D graphics, but it is easy to mix up positions (x, y, z) and directions (also x, y, z). 
+    We'll use 4D vectors to help clear up this mix-up. Don't freak out, they are super easy to use. 
+    The extra number from going from (x, y, z) to (x, y, z, w), will be a one for positions or a zero for directions.
+      </p>
+  </introduction>
+
+  <!-- include sections -->
+
+</chapter>
