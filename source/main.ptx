@@ -6,7 +6,7 @@
 
   <book xml:id="our-great-book">
     <title>Math for 3D Graphics</title>
-    <subtitle>Including C++ code</subtitle>
+    <subtitle>and how to code it up in C++</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
