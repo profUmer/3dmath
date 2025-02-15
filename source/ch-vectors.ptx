@@ -6,7 +6,8 @@
   <introduction>
     <p> Vectors are the bedrock of 3D graphics, but it is easy to mix up positions (x, y, z) and directions (also x, y, z). 
     We'll use 4D vectors to help clear up this mix-up. Don't freak out, they are super easy to use. 
-    The extra number from going from (x, y, z) to (x, y, z, w), will be a one for positions or a zero for directions.
+    The extra number (called w), will be a one for positions or a zero for directions. Don't go down the rabbit hole
+    of imagining the 4th dimension, there are only dragons there. Just think of them for now as a flag - 1 for points, and 0 for directions.
       </p>
   </introduction>
 

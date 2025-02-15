@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-matrices" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Matrices</title>
+
+  <introduction>
+    <p> Ok, I admit it - I love quaternions. But all they can do is rotate things. What about moving positions around, 
+    making objects bigger or smaller, and even strange things like the perpective projection. Matrices fit the bill nicely here. 
+      </p>
+  </introduction>
+
+  <!-- include sections -->
+
+</chapter>
