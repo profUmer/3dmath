@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-quaternions" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Quaternions</title>
+
+  <introduction>
+    <p> Don't be afraid! Quaternions are just helpful little creatures that love to rotate things. 
+    They are made by the intersection of two planes passing through the origin. That gives you the line about which to rotate.
+      </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-section-name.ptx" />
+
+</chapter>

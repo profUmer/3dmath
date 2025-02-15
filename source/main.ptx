@@ -13,7 +13,7 @@
 
     <!-- Include chapters -->
     <xi:include href="./ch-planes.ptx" />
-
+    <xi:include href="./ch-quaternions.ptx" />
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
