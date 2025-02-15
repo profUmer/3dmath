@@ -5,7 +5,7 @@
 
   <introduction>
     <p> Don't be afraid! Quaternions are just helpful little creatures that love to rotate things. 
-    They are made by the intersection of two planes passing through the origin. That gives you the line about which to rotate.
+    They are made by the intersection of two planes passing through the origin. That gives you the axis of rotation.
       </p>
   </introduction>
 
