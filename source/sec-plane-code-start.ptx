@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-plane-code-start" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Starting a Plane class</title>
+
+
+<listing xml:id="listing-plane-code-start">
+<caption>A bare-bones Plane class</caption>
+<program language="c">
+<code>
+struct Plane { 
+  /// Standard Euclidean definition ax + by + cz - d = 0 
+  float x, y, z, d;
+}; 
+</code>
+</program>
+</listing>
+</section>

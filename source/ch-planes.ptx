@@ -10,6 +10,6 @@
   </introduction>
 
   <!-- include sections -->
-  <!-- <xi:include href="sec-section-name.ptx" /> -->
+  <xi:include href="sec-plane-code-start.ptx" />
 
 </chapter>
