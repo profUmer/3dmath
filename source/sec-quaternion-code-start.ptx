@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-quaternion-code-start" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Starting a Quaternion class</title>
+
+
+<listing xml:id="listing-quaternion-code-start">
+<caption>A bare-bones Quaternion class</caption>
+<program language="c">
+<code>
+struct Quaternion {
+    float w;
+    Vec3 ijk; /// These are the ijk components of the Quaternion 
+};
+</code>
+</program>
+</listing>
+</section>
