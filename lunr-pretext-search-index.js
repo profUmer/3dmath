@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Starting a Plane class",
-  "body": " Starting a Plane class   A bare-bones Plane class   struct Plane { \/\/\/ Standard Euclidean definition ax + by + cz - d = 0 float x,y,z,d; };    "
+  "body": " Starting a Plane class   A bare-bones Plane class   struct Plane { \/\/\/ Standard Euclidean definition ax + by + cz - d = 0 float x, y, z, d; };    "
 },
 {
   "id": "listing-plane-code-start",
@@ -25,16 +25,25 @@ var ptx_lunr_docs = [
   "type": "Listing",
   "number": "1.1.1",
   "title": "",
-  "body": " A bare-bones Plane class   struct Plane { \/\/\/ Standard Euclidean definition ax + by + cz - d = 0 float x,y,z,d; };   "
+  "body": " A bare-bones Plane class   struct Plane { \/\/\/ Standard Euclidean definition ax + by + cz - d = 0 float x, y, z, d; };   "
 },
 {
-  "id": "ch-quaternions",
+  "id": "sec-quaternion-code-start",
   "level": "1",
-  "url": "ch-quaternions.html",
-  "type": "Chapter",
-  "number": "2",
-  "title": "Quaternions",
-  "body": " Quaternions   Quaternions get a bad rap. It takes just one person to yell \"four dimensional imaginary numbers!\", and students run for their lives. Don't fall for the scare tactics - quaternions are just helpful little creatures that love to rotate things. They are made by the intersection of two planes passing through the origin, giving the axis of rotation. You already know my favourite quaternion, the number 1.   "
+  "url": "sec-quaternion-code-start.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Starting a Quaternion class",
+  "body": " Starting a Quaternion class   A bare-bones Quaternion class   struct Quaternion { float w; Vec3 ijk; \/\/\/ These are the ijk components of the Quaternion };    "
+},
+{
+  "id": "listing-quaternion-code-start",
+  "level": "2",
+  "url": "sec-quaternion-code-start.html#listing-quaternion-code-start",
+  "type": "Listing",
+  "number": "2.1.1",
+  "title": "",
+  "body": " A bare-bones Quaternion class   struct Quaternion { float w; Vec3 ijk; \/\/\/ These are the ijk components of the Quaternion };   "
 },
 {
   "id": "ch-vectors",
