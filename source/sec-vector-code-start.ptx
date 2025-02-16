@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-vector-code-start" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Starting a 4D Vector class</title>
+
+
+<listing xml:id="listing-vector-code-start">
+<caption>A bare-bones 4D vector class</caption>
+<program language="cpp">
+<code>
+struct Vec4 {
+    float x, y, z, w;
+};
+</code>
+</program>
+</listing>
+</section>

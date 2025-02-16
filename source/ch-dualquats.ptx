@@ -10,6 +10,6 @@
     two intersecting planes (creating that line I was talking about), and are made up of 8 numbers. </p>
   </introduction>
 
-  <!-- include sections -->
+  <xi:include href="sec-dualquat-code-start.ptx" />
 
 </chapter>

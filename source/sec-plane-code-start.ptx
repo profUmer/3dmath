@@ -6,7 +6,7 @@
 
 <listing xml:id="listing-plane-code-start">
 <caption>A bare-bones Plane class</caption>
-<program language="c">
+<program language="cpp">
 <code>
 struct Plane { 
   /// Standard Euclidean definition ax + by + cz - d = 0 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-dualquat-code-start" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Starting a Dual Quaternion class</title>
+
+<listing xml:id="listing-dualquat-code-start">
+<caption>A bare-bones Dual Quaternion class</caption>
+<program language="cpp">
+<code>
+struct DualQuat {
+    float real; 
+	float e23;  /// This is like -i for a regular quaternion. Squares to -1
+	float e31;  /// -j
+	float e12;  /// -k
+	float e01;  /// Every term with a zero in it squares to zero. It's how translations are handled. 
+	float e02;
+	float e03;
+	float e0123;
+};
+</code>
+</program>
+</listing>
+</section>

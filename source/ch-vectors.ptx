@@ -11,6 +11,5 @@
       </p>
   </introduction>
 
-  <!-- include sections -->
-
+  <xi:include href="sec-vector-code-start.ptx" />
 </chapter>

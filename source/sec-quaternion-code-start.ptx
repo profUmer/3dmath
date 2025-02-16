@@ -6,7 +6,7 @@
 
 <listing xml:id="listing-quaternion-code-start">
 <caption>A bare-bones Quaternion class</caption>
-<program language="c">
+<program language="cpp">
 <code>
 struct Quaternion {
     float w;

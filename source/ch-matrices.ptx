@@ -9,6 +9,6 @@
       </p>
   </introduction>
 
-  <!-- include sections -->
+  <xi:include href="sec-matrix-code-start.ptx" />
 
 </chapter>
