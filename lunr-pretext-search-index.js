@@ -10,13 +10,22 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
-  "id": "ch-planes",
+  "id": "sec-plane-code-start",
   "level": "1",
-  "url": "ch-planes.html",
-  "type": "Chapter",
-  "number": "1",
-  "title": "Planes",
-  "body": " Planes   When I say \"Planes\", I mean an infinitely thin and flat sheet that stretches on and on forever. I know what you are thinking - how can they possibly be useful for 3D graphics which is definitely not rendered on an infinitely large screen? Well, it turns out that planes can be combined together to make lines and points and also reflect, rotate, and move objects too. Now that's useful!     "
+  "url": "sec-plane-code-start.html",
+  "type": "Section",
+  "number": "1.1",
+  "title": "Starting a Plane class",
+  "body": " Starting a Plane class   A bare-bones Plane class   struct Plane { \/\/\/ Standard Euclidean definition ax + by + cz - d = 0 float x,y,z,d; };    "
+},
+{
+  "id": "listing-plane-code-start",
+  "level": "2",
+  "url": "sec-plane-code-start.html#listing-plane-code-start",
+  "type": "Listing",
+  "number": "1.1.1",
+  "title": "",
+  "body": " A bare-bones Plane class   struct Plane { \/\/\/ Standard Euclidean definition ax + by + cz - d = 0 float x,y,z,d; };   "
 },
 {
   "id": "ch-quaternions",
@@ -25,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Chapter",
   "number": "2",
   "title": "Quaternions",
-  "body": " Quaternions   Quaternions get a bad rap. It takes just one person to yell \"four dimensional imaginary numbers!\", and students run for their lives. Don't fall for the scare tactics - quaternions are just helpful creatures that love to rotate things. They are made by the intersection of two planes passing through the origin, giving the axis of rotation. You already know my favourite quaternion, the number 1.    "
+  "body": " Quaternions   Quaternions get a bad rap. It takes just one person to yell \"four dimensional imaginary numbers!\", and students run for their lives. Don't fall for the scare tactics - quaternions are just helpful little creatures that love to rotate things. They are made by the intersection of two planes passing through the origin, giving the axis of rotation. You already know my favourite quaternion, the number 1.   "
 },
 {
   "id": "ch-vectors",
