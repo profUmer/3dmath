@@ -8,7 +8,7 @@
 <program language="cpp">
 <code>
 struct DualQuat {
-    float real; 
+	float real; 
 	float e23;  /// This is like -i for a regular quaternion. Squares to -1
 	float e31;  /// -j
 	float e12;  /// -k

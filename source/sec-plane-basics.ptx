@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-plane-basics" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Plane basics</title>
+  <p>
+    It might be useful to start with something that is not a plane, as shown below.
+  </p>
+  <figure xml:id="figure-not-a-plane">
+    <caption>The curvature of space-time around a massive object is not a plane.</caption>
+    <image source="images/curved-spacetime.jpg" width="80%" rotate="0"/>
+  </figure>
+
+
+
+</section>

@@ -8,8 +8,7 @@
 <program language="cpp">
 <code>
 class Matrix4 {
-	/// Let's just make sure that all is clear about how this matrix is layed out. 
-
+	/// Let's just make sure that all is clear about how this matrix is layed out.	
 	/// How a matrix is really layed out is pretty much abitrary but we need to agree
 	/// and the world has agreed (except for Microsoft) on the right-hand rule. 
 	/// First, the 4x4 matrix is really just an array of 16 numbers.  
