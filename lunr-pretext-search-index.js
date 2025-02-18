@@ -10,11 +10,29 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
+  "id": "sec-plane-basics",
+  "level": "1",
+  "url": "sec-plane-basics.html",
+  "type": "Section",
+  "number": "1.1",
+  "title": "Plane basics",
+  "body": " Plane basics  It might be useful to start with something that is not a plane, as shown below.   The curvature of space-time around a massive object is not a plane.    "
+},
+{
+  "id": "figure-not-a-plane",
+  "level": "2",
+  "url": "sec-plane-basics.html#figure-not-a-plane",
+  "type": "Figure",
+  "number": "1.1.1",
+  "title": "",
+  "body": " The curvature of space-time around a massive object is not a plane.   "
+},
+{
   "id": "sec-plane-code-start",
   "level": "1",
   "url": "sec-plane-code-start.html",
   "type": "Section",
-  "number": "1.1",
+  "number": "1.2",
   "title": "Starting a Plane class",
   "body": " Starting a Plane class   A bare-bones Plane class   struct Plane { \/\/\/ Standard Euclidean definition ax + by + cz - d = 0 float x, y, z, d; };    "
 },
@@ -23,7 +41,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-plane-code-start.html#listing-plane-code-start",
   "type": "Listing",
-  "number": "1.1.1",
+  "number": "1.2.1",
   "title": "",
   "body": " A bare-bones Plane class   struct Plane { \/\/\/ Standard Euclidean definition ax + by + cz - d = 0 float x, y, z, d; };   "
 },
