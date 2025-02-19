@@ -52,16 +52,25 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Quaternion basics",
-  "body": " Quaternion basics  A plane acts as a reflecting mirror, but what happens if you reflect twice? It turns out you end up with a rotation, as shown in the picture below.   A cat reflected across two planes. The final cat has been rotated from it's original position. Notice the angle between the planes is 45 but the cat has been rotated by 90 .    "
+  "body": " Quaternion basics  A plane acts as a reflecting mirror, but what happens if you reflect twice? It turns out you end up with a rotation, as shown in the picture below.   A cat reflected across two planes. The final cat has been rotated from it's original position. Notice the angle between the planes is 45 but the cat has been rotated by 90 anti-clockwise.    Be careful with rotations, as order matters. The following picture contains the same mirror planes as the picture above, but the cat is reflected in the opposite order.  A cat reflected across two planes, but this time the order of reflections has been swapped compared to . Notice the cat is still rotated by 90 at the end, but now it is a clockwise rotation.     "
 },
 {
-  "id": "figure-reflecting-in-two-planes",
+  "id": "figure-reflecting-in-two-planes-1",
   "level": "2",
-  "url": "sec-quaternion-basics.html#figure-reflecting-in-two-planes",
+  "url": "sec-quaternion-basics.html#figure-reflecting-in-two-planes-1",
   "type": "Figure",
   "number": "2.1.1",
   "title": "",
-  "body": " A cat reflected across two planes. The final cat has been rotated from it's original position. Notice the angle between the planes is 45 but the cat has been rotated by 90 .   "
+  "body": " A cat reflected across two planes. The final cat has been rotated from it's original position. Notice the angle between the planes is 45 but the cat has been rotated by 90 anti-clockwise.   "
+},
+{
+  "id": "figure-reflecting-in-two-planes-2",
+  "level": "2",
+  "url": "sec-quaternion-basics.html#figure-reflecting-in-two-planes-2",
+  "type": "Figure",
+  "number": "2.1.2",
+  "title": "",
+  "body": " A cat reflected across two planes, but this time the order of reflections has been swapped compared to . Notice the cat is still rotated by 90 at the end, but now it is a clockwise rotation.   "
 },
 {
   "id": "sec-quaternion-code-start",
