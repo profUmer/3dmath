@@ -46,11 +46,29 @@ var ptx_lunr_docs = [
   "body": " A bare-bones Plane class   struct Plane { \/\/\/ Standard Euclidean definition ax + by + cz - d = 0 float x, y, z, d; };   "
 },
 {
+  "id": "sec-quaternion-basics",
+  "level": "1",
+  "url": "sec-quaternion-basics.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Quaternion basics",
+  "body": " Quaternion basics  A plane acts as a reflecting mirror, but what happens if you reflect twice? It turns out you end up with a rotation, as shown in the picture below.   A cat reflected across two planes. The final cat has been rotated from it's original position. Notice the angle between the planes is 45 but the cat has been rotated by 90 .    "
+},
+{
+  "id": "figure-reflecting-in-two-planes",
+  "level": "2",
+  "url": "sec-quaternion-basics.html#figure-reflecting-in-two-planes",
+  "type": "Figure",
+  "number": "2.1.1",
+  "title": "",
+  "body": " A cat reflected across two planes. The final cat has been rotated from it's original position. Notice the angle between the planes is 45 but the cat has been rotated by 90 .   "
+},
+{
   "id": "sec-quaternion-code-start",
   "level": "1",
   "url": "sec-quaternion-code-start.html",
   "type": "Section",
-  "number": "2.1",
+  "number": "2.2",
   "title": "Starting a Quaternion class",
   "body": " Starting a Quaternion class   A bare-bones Quaternion class   struct Quaternion { float w; Vec3 ijk; \/\/\/ These are the ijk components of the Quaternion };    "
 },
@@ -59,7 +77,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-quaternion-code-start.html#listing-quaternion-code-start",
   "type": "Listing",
-  "number": "2.1.1",
+  "number": "2.2.1",
   "title": "",
   "body": " A bare-bones Quaternion class   struct Quaternion { float w; Vec3 ijk; \/\/\/ These are the ijk components of the Quaternion };   "
 },

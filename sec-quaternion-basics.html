@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Dual Quaternions</title>
+<title>Quaternion basics</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -123,7 +123,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-matrix-code-start.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="our-great-book.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-dualquat-code-start.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch-quaternions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-quaternions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-quaternion-code-start.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -141,10 +141,10 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-plane-code-start.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Starting a Plane class</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-quaternions.html" class="internal"><span class="codenumber">2</span> <span class="title">Quaternions</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-quaternion-basics.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Quaternion basics</span></a></div></li>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-quaternion-basics.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Quaternion basics</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-quaternion-code-start.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Starting a Quaternion class</span></a></div></li>
 </ul>
 </li>
@@ -156,18 +156,20 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-matrices.html" class="internal"><span class="codenumber">4</span> <span class="title">Matrices</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-matrix-code-start.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Starting a 4D matrix class</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-dualquats.html" class="internal"><span class="codenumber">5</span> <span class="title">Dual Quaternions</span></a></div>
-<ul class="structural toc-item-list active"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-dualquat-code-start.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Starting a Dual Quaternion class</span></a></div></li></ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-dualquat-code-start.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Starting a Dual Quaternion class</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="ch-dualquats"><h2 class="heading">
-<span class="type">Chapter</span><span class="space"> </span><span class="codenumber">5</span><span class="space"> </span><span class="title">Dual Quaternions</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-quaternion-basics"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">Quaternion basics</span>
 </h2>
-<section class="introduction" id="ch-dualquats-2"><div class="para" id="ch-dualquats-2-1">I find it annoying fiddling around with 16 numbers in a big 4x4 matrix. Isn’t there an easier way to rotate and translate things? Yes! Welcome to dual quaternions. Remember how quaternions are just lines that go through the origin. Well what if the line went through something other than the origin? That’s all a dual quaternion is, so no need to panic. They are created by two intersecting planes (creating that line I was talking about), and are made up of 8 numbers.</div></section><nav class="summary-links"><ul><li><a href="sec-dualquat-code-start.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Starting a Dual Quaternion class</span></a></li></ul></nav></section></div>
+<div class="para" id="sec-quaternion-basics-2">A plane acts as a reflecting mirror, but what happens if you reflect twice? It turns out you end up with a rotation, as shown in the picture below.</div>
+<figure class="figure figure-like" id="figure-reflecting-in-two-planes"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/reflecting%20in%20two%20planes%201.png" class="contained" style="transform: rotate(0deg)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.1<span class="period">.</span></span><span class="space"> </span>A cat reflected across two planes. The final cat has been rotated from it’s original position. Notice the angle between the planes is 45° but the cat has been rotated by 90°.</figcaption></figure></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-matrix-code-start.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-dualquat-code-start.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="ch-quaternions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-quaternion-code-start.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
