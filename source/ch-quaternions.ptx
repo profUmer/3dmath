@@ -10,6 +10,8 @@
       </p>
   </introduction>
 
+  <!-- include sections -->
+  <xi:include href="sec-quaternion-basics.ptx" />
   <xi:include href="sec-quaternion-code-start.ptx" />
 
 </chapter>

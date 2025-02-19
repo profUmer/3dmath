@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-quaternion-basics" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Quaternion basics</title>
+  <p>
+    A plane acts as a reflecting mirror, but what happens if you reflect twice? 
+    It turns out you end up with a rotation, as shown in the picture below.
+  </p>
+  <figure xml:id="figure-reflecting-in-two-planes">
+    <caption>A cat reflected across two planes. The final cat has been rotated from it's original position. 
+    Notice the angle between the planes is 45<degree/> but the cat has been rotated by 90<degree/>.
+    </caption>
+    <image source="images/reflecting in two planes 1.png" width="80%" rotate="0"/>
+  </figure>
+
+
+
+</section>
