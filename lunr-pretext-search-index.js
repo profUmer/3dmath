@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Plane basics",
-  "body": " Plane basics  It might be useful to start with something that is not a plane, as shown below.   The curvature of space-time around a massive object is not a plane.    "
+  "body": " Plane basics  It might be useful to start with something that is not a plane, as shown below.   The curvature of space-time around a massive object is not a plane.    Notice how the fabric of space-time in curves around the massive object. That's not a plane. We need a flat sheet, like the image below:  The plane    The whole \"infinitely large and infinitesimally thin\" definition throws off a lot of people. It's hard to imagine something so different to what we see in the real world. But planes are defined by simplest equations. The plane in is described by the equation . That's it! Every point on the plane has an coordinate of zero.  "
 },
 {
   "id": "figure-not-a-plane",
@@ -26,6 +26,15 @@ var ptx_lunr_docs = [
   "number": "1.1.1",
   "title": "",
   "body": " The curvature of space-time around a massive object is not a plane.   "
+},
+{
+  "id": "figure-plane-x-is-zero",
+  "level": "2",
+  "url": "sec-plane-basics.html#figure-plane-x-is-zero",
+  "type": "Figure",
+  "number": "1.1.2",
+  "title": "",
+  "body": " The plane    "
 },
 {
   "id": "sec-plane-code-start",
