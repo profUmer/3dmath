@@ -12,10 +12,32 @@
 <p>
   Notice how the fabric of space-time in <nbsp /><xref ref="figure-not-a-plane" /> curves around the massive object. That's
   not a plane. We need a flat sheet, like the image below:
-  <figure xml:id="figure-plane-x-is-zero">
+  <!-- <figure xml:id="figure-plane-x-is-zero">
     <caption>The plane <m> x = 0 </m> </caption>
     <image source="images/plane x is zero.png" width="80%" rotate="0"/>
-  </figure>
+  </figure> -->
+
+<figure xml:id="figure-plane-x-is-zero">
+  <caption>The plane <m> x = 0 </m></caption>
+    <image xml:id="plane-x-is-zero" width="80%">
+      <asymptote>
+import solids;
+size(0,150);
+currentprojection = orthographic(0.2,0.5,1,up=Y);
+draw(scale(1.8,1.8,1.8) * shift(0.0, -0.5, -0.5) * rotate(-90, Y) * unitplane, surfacepen=lightgray,
+light=nolight);
+draw(-1.1X -- 1.1X,
+arrow=Arrow3(), L=Label("$x$",
+position=EndPoint));
+draw(-1.1Y -- 1.1Y,
+arrow=Arrow3(), L=Label("$y$",
+position=EndPoint));
+draw(-Z -- 1.1Z, arrow=Arrow3(), L=Label("$z$",
+position=EndPoint));
+      </asymptote>
+    </image>
+</figure>
+
 
 The whole "infinitely large and infinitesimally thin" definition throws off a lot of people. It's hard to imagine something so
 different to what we see in the real world. But planes are defined by simplest equations. The plane in <nbsp /><xref ref="figure-plane-x-is-zero" /> is described by the equation
