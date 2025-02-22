@@ -18,7 +18,7 @@
   </figure> -->
 
 <figure xml:id="figure-plane-x-is-zero">
-  <caption>The plane <m> x = 0 </m></caption>
+  <caption>The plane <m> x = 0 </m>. Note that I have only drawn a tiny part of the infinitely large plane.</caption>
     <image xml:id="plane-x-is-zero" width="80%">
       <asymptote>
 import solids;
@@ -40,10 +40,50 @@ position=EndPoint));
 
 
 The whole "infinitely large and infinitesimally thin" definition throws off a lot of people. It's hard to imagine something so
-different to what we see in the real world. But planes are defined by simplest equations. The plane in <nbsp /><xref ref="figure-plane-x-is-zero" /> is described by the equation
-<m> x = 0 </m>. That's it! Every point on the plane has an <m> x </m> coordinate of zero. 
-
+different to what we see in the real world. But planes are defined by simplest equations. The plane in <nbsp /><xref ref="figure-plane-x-is-zero" /> 
+that stretches out forever is described by the following equation:
+<md>
+<mrow> x = 0 </mrow>. 
+</md>
+That's it! Every point on the plane has an <m> x </m> coordinate of zero. Could we have a simpler equation?
 </p>
 
+<p>
+Wait, there's more! These are also plane equations:
+    <md>
+      <mrow>y = 0</mrow>
+      <mrow>z = 0</mrow>
+    </md>
+and are shown visually below.
+<figure xml:id="figure-planes-y-and-z-are-zero">
+  <caption>The planes <m> y = 0 </m> and <m> z = 0 </m> drawn in pale green and pale blue respectively. </caption>
+    <image xml:id="planes-y-and-z-are-zero" width="80%">
+      <asymptote>
+import solids;
+size(0,150);
+currentprojection = orthographic(0.2,0.5,1,up=Y);
 
+<!-- y = 0 plane -->
+draw(scale(1.8,1.8,1.8) * shift(-0.5, 0.0, -0.5) * rotate(90, X) * unitplane, surfacepen=palegreen,
+light=nolight);
+
+<!-- z = 0 plane -->
+draw(scale(1.8,1.8,1.8) * shift(-0.5, -0.5, 0.0) * rotate(0, Y) * unitplane, surfacepen=paleblue,
+light=nolight);
+
+draw(-1.1X -- 1.1X,
+arrow=Arrow3(), L=Label("$x$",
+position=EndPoint));
+draw(-1.1Y -- 1.1Y,
+arrow=Arrow3(), L=Label("$y$",
+position=EndPoint));
+draw(-Z -- 1.1Z, arrow=Arrow3(), L=Label("$z$",
+position=EndPoint));
+      </asymptote>
+    </image>
+</figure>
+
+
+
+</p>
 </section>
