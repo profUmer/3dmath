@@ -13,7 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="book:title" content="Math for 3D Graphics">
-<meta property="book:author" content="SF &amp; UN">
+<meta property="book:author" content="SF, UN &amp; PN">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -110,7 +110,7 @@ eBookConfig.enable_chatcodes =  false;
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
 <h1 class="heading"><a href="our-great-book.html"><span class="title">Math for 3D Graphics:</span> <span class="subtitle">and how to code it up in C++</span></a></h1>
-<p class="byline">SF &amp; UN</p>
+<p class="byline">SF, UN &amp; PN</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
@@ -167,8 +167,28 @@ eBookConfig.enable_chatcodes =  false;
 </h2>
 <div class="para" id="sec-plane-basics-2">It might be useful to start with something that is not a plane, as shown below.</div>
 <figure class="figure figure-like" id="figure-not-a-plane"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/curved-spacetime.jpg" class="contained" style="transform: rotate(0deg)"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.1<span class="period">.</span></span><span class="space"> </span>The curvature of space-time around a massive object is not a plane.</figcaption></figure><div class="para" id="sec-plane-basics-4">Notice how the fabric of space-time in  <a href="sec-plane-basics.html#figure-not-a-plane" class="xref" data-knowl="./knowl/xref/figure-not-a-plane.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.1">Figure 1.1.1</a> curves around the massive object. That’s not a plane. We need a flat sheet, like the image below:  <figure class="figure figure-like" id="figure-plane-x-is-zero"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><div class="asymptote-box" style="padding-top: 103.448275862069%"><iframe src="generated/asymptote/plane-x-is-zero.html" class="asymptote"></iframe></div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.2<span class="period">.</span></span><span class="space"> </span>The plane <span class="process-math">\(x = 0 \)</span></figcaption></figure> The whole "infinitely large and infinitesimally thin" definition throws off a lot of people. It’s hard to imagine something so different to what we see in the real world. But planes are defined by simplest equations. The plane in  <a href="sec-plane-basics.html#figure-plane-x-is-zero" class="xref" data-knowl="./knowl/xref/figure-plane-x-is-zero.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.2">Figure 1.1.2</a> is described by the equation <span class="process-math">\(x = 0 \text{.}\)</span> That’s it! Every point on the plane has an <span class="process-math">\(x \)</span> coordinate of zero.</div></section></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.1<span class="period">.</span></span><span class="space"> </span>The curvature of space-time around a massive object is not a plane.</figcaption></figure><div class="para logical" id="sec-plane-basics-4">
+<div class="para">Notice how the fabric of space-time in  <a href="sec-plane-basics.html#figure-not-a-plane" class="xref" data-knowl="./knowl/xref/figure-not-a-plane.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.1">Figure 1.1.1</a> curves around the massive object. That’s not a plane. We need a flat sheet, like the image below:  <figure class="figure figure-like" id="figure-plane-x-is-zero"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><div class="asymptote-box" style="padding-top: 103.448275862069%"><iframe src="generated/asymptote/plane-x-is-zero.html" class="asymptote"></iframe></div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.2<span class="period">.</span></span><span class="space"> </span>The plane <span class="process-math">\(x = 0 \text{.}\)</span> Note that I have only drawn a tiny part of the infinitely large plane.</figcaption></figure> The whole "infinitely large and infinitesimally thin" definition throws off a lot of people. It’s hard to imagine something so different to what we see in the real world. But planes are defined by simplest equations. The plane in  <a href="sec-plane-basics.html#figure-plane-x-is-zero" class="xref" data-knowl="./knowl/xref/figure-plane-x-is-zero.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.1.2">Figure 1.1.2</a> that stretches out forever is described by the following equation:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/figure-not-a-plane.html ./knowl/xref/figure-plane-x-is-zero.html" id="sec-plane-basics-4-6">
+\begin{gather*}
+x = 0 
+\end{gather*}
+</div>
+<div class="para">That’s it! Every point on the plane has an <span class="process-math">\(x \)</span> coordinate of zero. Could we have a simpler equation?</div>
+</div>
+<div class="para logical" id="sec-plane-basics-5">
+<div class="para">Wait, there’s more! These are also plane equations:</div>
+<div class="displaymath process-math" id="sec-plane-basics-5-1">
+\begin{gather*}
+y = 0\\
+z = 0
+\end{gather*}
+</div>
+<div class="para">and are shown visually below. <figure class="figure figure-like" id="figure-planes-y-and-z-are-zero"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><div class="asymptote-box" style="padding-top: 93.7106918238994%"><iframe src="generated/asymptote/planes-y-and-z-are-zero.html" class="asymptote"></iframe></div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.3<span class="period">.</span></span><span class="space"> </span>The planes <span class="process-math">\(y = 0 \)</span> and <span class="process-math">\(z = 0 \)</span> drawn in pale green and pale blue respectively.</figcaption></figure>
+</div>
+</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-planes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-plane-code-start.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
