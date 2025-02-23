@@ -81,18 +81,18 @@ draw(-Z -- 1.1Z,    arrow=Arrow3(), L=Label("$z$", position=EndPoint));
 
 <p>
 We've covered the essential planes that cut through the origin and are lined up the three coordinate axes.
-But what about planes that don't go through the origin? Also easy! Check out the planes below:
+But what about planes that don't go through the origin? Also easy! Check out the three planes below:
 
 <figure xml:id="figure-planes-x-away-from-origin">
-  <caption>The planes <m> x = -1 </m>, <m> x = 0.5 </m> and <m> x = 1 </m>. </caption>
+  <caption>The planes <m> x = -0.5 </m>, <m> x = 0.5 </m> and <m> x = 1 </m>.</caption>
     <image xml:id="planes-x-away-from-origin" width="80%">
       <asymptote>
 import solids;
 size(0,150);
 currentprojection = orthographic(0.2,0.5,1,up=Y);
 
-<!-- x = -1 plane -->
-draw(shift(-1, 0, 0) * scale(1.8,1.8,1.8) * shift(0.0, -0.5, -0.5) * rotate(-90, Y) * unitplane, surfacepen=lightgray,
+<!-- x = -0.5 plane -->
+draw(shift(-0.5, 0, 0) * scale(1.8,1.8,1.8) * shift(0.0, -0.5, -0.5) * rotate(-90, Y) * unitplane, surfacepen=lightgray,
 light=nolight);
 
 <!-- x = 0.5 plane -->
@@ -109,8 +109,6 @@ draw(-Z -- 1.1Z,    arrow=Arrow3(), L=Label("$z$", position=EndPoint));
       </asymptote>
     </image>
 </figure>
-
-
 </p>
 
 </section>
