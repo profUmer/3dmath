@@ -61,7 +61,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Starting a Plane class",
-  "body": " Starting a Plane class   A bare-bones Plane class   struct Plane { \/\/\/ Standard Euclidean definition ax + by + cz - d = 0 float x, y, z, d; };    Try out this interactive demo to see how the signed distance d, and the coefficients on x, y and z affect the plane.  Plane equation ax + by + cz = d     "
+  "body": " Starting a Plane class   A bare-bones Plane class   struct Plane { \/\/\/ Standard Euclidean definition ax + by + cz - d = 0 float x, y, z, d; };    Try out this interactive demo to see how the signed distance d, and the coefficients on the x, y and z terms affect the plane.  The plane equation      "
 },
 {
   "id": "listing-plane-code-start",
@@ -79,7 +79,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "1.2.2",
   "title": "",
-  "body": " Plane equation ax + by + cz = d   "
+  "body": " The plane equation    "
 },
 {
   "id": "sec-quaternion-basics",
