@@ -15,4 +15,13 @@ struct Plane {
 </code>
 </program>
 </listing>
+
+<p>
+  Try out this interactive demo to see how the signed distance d, and the coefficients on the x, y and z terms affect the plane.
+<figure xml:id="figure-plane-equation-with-controls">
+  <caption>The plane equation <m> ax + by + cz = d </m> </caption>
+  <interactive xml:id="plane-equation-with-controls" calcplot3d="type=implicit;equation=ax%20+%20by%20+%20cz%20~%20d;cubes=16;visible=true;fixdomain=false;xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;alpha=-1;hidemyedges=false;view=0;format=normal;constcol=rgb(255,0,0)&amp;type=slider;slider=a;value=1;steps=100;pmin=-2;pmax=2;repeat=true;bounce=true;waittime=1;careful=false;noanimate=false;name=-1&amp;type=slider;slider=b;value=0;steps=100;pmin=-2;pmax=2;repeat=true;bounce=true;waittime=1;careful=false;noanimate=false;name=-1&amp;type=slider;slider=c;value=0;steps=100;pmin=-2;pmax=2;repeat=true;bounce=true;waittime=1;careful=false;noanimate=false;name=-1&amp;type=slider;slider=d;value=1;steps=100;pmin=-2;pmax=2;repeat=true;bounce=true;waittime=1;careful=false;noanimate=false;name=-1&amp;type=window;showfunnot=false;hsrmode=0;nomidpts=true;anaglyph=-1;center=3.305028597075162,4.736564873073837,8.163439175719043,1;focus=0,0,0,1;up=-0.13888856785565712,0.879941529960108,-0.45432683122447043,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;shownormals=false;shownormalsatpts=false;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);lastaddedsurfaceactive=true;disabletrace=false;activefun=-1;xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;xscalefactor=1;yscalefactor=1;zscalefactor=1;tracemode=0;keep2d=false;zoom=0.6" variant="controls" width="95%" aspect="3:2" />
+</figure>
+</p>
+
 </section>
