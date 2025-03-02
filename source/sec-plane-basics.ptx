@@ -104,6 +104,11 @@ draw(shift(1, 0, 0) * scale(1.8,1.8,1.8) * shift(0.0, -0.5, -0.5) * rotate(-90, 
 light=nolight);
 
 draw(-1.1X -- 1.2X, arrow=Arrow3(), L=Label("$x$", position=EndPoint));
+
+draw((-0.5,0.05, 0) -- (-0.5, -0.05, 0), L=Label("$-0.5$", position=EndPoint, align = (0.6*E + 0.5*S)));
+draw(( 0.5,0.05, 0) -- ( 0.5, -0.05, 0), L=Label( "$0.5$", position=EndPoint, align = (0.6*E + 0.5*S)));
+
+
 draw(-1.1Y -- 1.1Y, arrow=Arrow3(), L=Label("$y$", position=EndPoint));
 draw(-Z -- 1.1Z,    arrow=Arrow3(), L=Label("$z$", position=EndPoint));
       </asymptote>
@@ -114,19 +119,90 @@ draw(-Z -- 1.1Z,    arrow=Arrow3(), L=Label("$z$", position=EndPoint));
 <p>
 The three planes above correspond to the the equations:
     <md>
-      <mrow>x = -0.5</mrow>
-      <mrow>x = 0.5</mrow>
-      <mrow>x = 1</mrow>
+      <mrow>x \amp = -0.5</mrow>
+      <mrow>x \amp = 0.5</mrow>
+      <mrow>x \amp = 1</mrow>
     </md>
 Notice the number on the right side of the equals sign above and compare it to <nbsp /><xref ref="figure-planes-x-away-from-origin" />.
 Did you notice that the number corresponds to the closest distance between the plane and the origin? For example the plane <m> x = 0.5 </m> 
-is <m>0.5</m> or more units away from the spot where x, y, and z are all zero. But hold on, the plane <m> x = -0.5 </m> is also
-<m>0.5</m> or more units from the origin, but on the negative side of the x-axis. That might convince you that the number is actually
+is <m>0.5</m> or more units away from the spot where x, y, and z are all zero. Or another way to think about it, is
+that the plane is <m>0.5</m> units away from the plane <m> x = 0 </m>
+</p>
+
+<p>
+But hold on, the plane <m> x = -0.5 </m> is also at least
+<m>0.5</m> units from the origin, but on the negative side of the x-axis. That might convince you that the number is actually
 the "signed" minimum distance from the origin, where the <m> \pm </m> sign tells you whether the plane cuts through the positive
 or negative side of the relevant axis. That means we can generalize the <m> x </m> plane equation to the following:
     <md>
       <mrow>x = d</mrow>
     </md>
 where <m> d </m> is the called the signed distance to the origin.
+</p>
+
+<p>
+  This idea of a signed distance also applies to the <m> y </m> and <m> z </m> planes as well, as shown in the following two figures.
+
+<figure xml:id="figure-planes-y-away-from-origin">
+  <caption>The planes <m> y = -0.5 </m>, <m> y = 0.5 </m> and <m> y = 1 </m>.</caption>
+    <image xml:id="planes-y-away-from-origin" width="80%">
+      <asymptote>
+import solids;
+size(0,150);
+currentprojection = orthographic(0.2,0.2,1,up=Y);
+
+<!-- y = -0.5 plane -->
+draw(shift(0, -0.5, 0) * scale(1.8,1.8,1.8) * shift(-0.5, 0.0, -0.5) * rotate(90, X) * unitplane, surfacepen=lightgray,
+light=nolight);
+
+<!-- y = 0.5 plane -->
+draw(shift(0, 0.5, 0) * scale(1.8,1.8,1.8) * shift(-0.5, 0.0, -0.5) * rotate(90, X) * unitplane, surfacepen=lightgray,
+light=nolight);
+
+<!-- y = 1 plane -->
+draw(shift(0, 1, 0) * scale(1.8,1.8,1.8) * shift(-0.5, 0.0, -0.5) * rotate(90, X) * unitplane, surfacepen=lightgray,
+light=nolight);
+
+draw(-1.1X -- 1.1X, arrow=Arrow3(), L=Label("$x$", position=EndPoint));
+draw(-1.1Y -- 1.2Y, arrow=Arrow3(), L=Label("$y$", position=EndPoint));
+draw((-0.05, -0.5, 0) -- (0.05, -0.5, 0), L=Label("$-0.5$", position=EndPoint, align = (0.4*E + 0.5*N)));
+draw((-0.05,  0.5, 0) -- (0.05,  0.5, 0), L=Label( "$0.5$", position=EndPoint, align = (0.4*E + 0.5*N)));
+
+draw(-Z -- 1.1Z,    arrow=Arrow3(), L=Label("$z$", position=EndPoint));
+      </asymptote>
+    </image>
+</figure>
+
+<figure xml:id="figure-planes-z-away-from-origin">
+  <caption>The planes <m> z = -0.5 </m>, <m> z = 0.5 </m> and <m> z = 1 </m>.</caption>
+    <image xml:id="planes-z-away-from-origin" width="80%">
+      <asymptote>
+import solids;
+size(0,150);
+currentprojection = orthographic(-0.2,0.05,0.03,up=Y);
+
+<!-- z = -0.5 plane -->
+draw(shift(0, 0, -0.5) * scale(1.8,1.8,1.8) * shift(-0.5, -0.5, 0.0) * rotate(0, X) * unitplane, surfacepen=lightgray,
+light=nolight);
+
+<!-- z = 0.5 plane -->
+draw(shift(0, 0, 0.5) * scale(1.8,1.8,1.8) * shift(-0.5, -0.5, 0.0) * rotate(0, X) * unitplane, surfacepen=lightgray,
+light=nolight);
+
+<!-- z = 1 plane -->
+draw(shift(0, 0, 1) * scale(1.8,1.8,1.8) * shift(-0.5, -0.5, 0.0) * rotate(0, X) * unitplane, surfacepen=lightgray,
+light=nolight);
+
+draw(-1.1X -- 1.1X, arrow=Arrow3(), L=Label("$x$", position=EndPoint));
+draw(-1.1Y -- 1.1Y, arrow=Arrow3(), L=Label("$y$", position=EndPoint));
+
+draw(-Z -- 1.2Z,    arrow=Arrow3(), L=Label("$z$", position=EndPoint));
+draw((0, -0.05,-0.5) -- (0, 0.05,-0.5), L=Label("$-0.5$", position=EndPoint, align = (0.9*E + 0.5*N)));
+draw((0, -0.05, 0.5) -- (0, 0.05, 0.5), L=Label( "$0.5$", position=EndPoint, align = (0.9*E + 0.5*N)));
+      </asymptote>
+    </image>
+</figure>
+
+
 </p>
 </section>
