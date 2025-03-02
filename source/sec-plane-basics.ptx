@@ -111,4 +111,22 @@ draw(-Z -- 1.1Z,    arrow=Arrow3(), L=Label("$z$", position=EndPoint));
 </figure>
 </p>
 
+<p>
+The three planes above correspond to the the equations:
+    <md>
+      <mrow>x = -0.5</mrow>
+      <mrow>x = 0.5</mrow>
+      <mrow>x = 1</mrow>
+    </md>
+Notice the number on the right side of the equals sign above and compare it to <nbsp /><xref ref="figure-planes-x-away-from-origin" />.
+Did you notice that the number corresponds to the closest distance between the plane and the origin? For example the plane <m> x = 0.5 </m> 
+is <m>0.5</m> or more units away from the spot where x, y, and z are all zero. But hold on, the plane <m> x = -0.5 </m> is also
+<m>0.5</m> or more units from the origin, but on the negative side of the x-axis. That might convince you that the number is actually
+the "signed" minimum distance from the origin, where the <m> \pm </m> sign tells you whether the plane cuts through the positive
+or negative side of the relevant axis. That means we can generalize the <m> x </m> plane equation to the following:
+    <md>
+      <mrow>x = d</mrow>
+    </md>
+where <m> d </m> is the called the signed distance to the origin.
+</p>
 </section>
